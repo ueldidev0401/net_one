@@ -38,7 +38,7 @@
     "build:tailwind": "postcss ./src/styles/index.css -o ./src/styles/tailwind.css --env production",
 
     "start": "npm-run-all -p watch:tailwind start:craco",
-    "build": "npm-run-all -p build:tailwind && build:craco"
+    "build": "npm run build:tailwind && npm run build:craco"
   },
   "eslintConfig": {
     "extends": [
